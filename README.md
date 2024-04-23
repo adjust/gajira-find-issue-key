@@ -1,5 +1,5 @@
 ---------
-⚠️  Used within shared GH workflows: https://github.com/adjust/githubWorkflows/blob/main/.github/actions/jiraComment/action.yml
+⚠️  Used within shared [jiraComment](https://github.com/adjust/githubWorkflows/blob/main/.github/actions/jiraComment/action.yml) action
 ---------
 
 # Jira Find Issue Key
@@ -14,7 +14,7 @@ Extract issue key from string
 To find an issue key inside github event (branch):
 ```yaml
 - name: Find in commit messages
-  uses: atlassian/gajira-find-issue-key@v3
+  uses: adjust/gajira-find-issue-key@v4
   with:
     string: ${{ github.event.ref }}
 ```
@@ -22,7 +22,7 @@ To find an issue key inside github event (branch):
 Or do the same using shortcut `from`:
 ```yaml
 - name: Find in commit messages
-  uses: atlassian/gajira-find-issue-key@v3
+  uses: adjust/gajira-find-issue-key@v4
   with:
     from: branch
 ```
@@ -30,7 +30,7 @@ Or do the same using shortcut `from`:
 To find an issue key inside commit messages:
 ```yaml
 - name: Find in commit messages
-  uses: atlassian/gajira-find-issue-key@v3
+  uses: adjust/gajira-find-issue-key@v4
   with:
     from: commits
 ```
